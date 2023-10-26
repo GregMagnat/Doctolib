@@ -10,3 +10,7 @@ end
 100.times do
     appointment= Appointment.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name.)
 end
+
+3.times do
+    city= City.create!(name: Faker::Address.city.)
+end
