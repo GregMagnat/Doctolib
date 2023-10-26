@@ -6,6 +6,8 @@ class CreateDoctors < ActiveRecord::Migration[7.1]
       t.string :speciality
       t.string :zip_code
 
+      t.belongs_to :city, index: true
+
       t.timestamps
     end
   end
